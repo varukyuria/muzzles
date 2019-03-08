@@ -111,7 +111,6 @@ export default class Ipic {
   static phantomLoad(src) {
     let img = new Image();
     img.src = src;
-    img.onload = () => console.log(img);
   }
 
   addImg(src, parent, maxWidth) {
