@@ -11,6 +11,7 @@ const SAT = 6;
 
 const main = document.getElementById('main');
 
+// skull
 new Ipic({
   name: 'skull',
   frames: generateFrames('skull00.jpg', 6, 'assets/pics/skull'),
@@ -20,6 +21,8 @@ new Ipic({
   days: [],
   mouseThreshold: -40
 });
+
+// skeleton
 new Ipic({
   name: 'skeleton',
   frames: generateFrames('skeleton00.jpg', 3, 'assets/pics/skeleton'),
@@ -30,6 +33,8 @@ new Ipic({
   fullviewWidth: '500px',
   mouseThreshold: 40
 });
+
+// torso layers back
 let temp = new Ipic({
   name: 'torso layers back',
   frames: generateFrames('torso_layers_back00.jpg', 10, 'assets/pics/torso_layers/back'),
@@ -40,6 +45,7 @@ let temp = new Ipic({
   days: [],
   mouseThreshold: 20
 });
+// torso layers front
 new Ipic({
   name: 'torso layers front',
   frames: generateFrames('torso_layers_front00.jpg', 6, 'assets/pics/torso_layers/front'),
@@ -60,4 +66,16 @@ new Ipic({
   parent: main,
   days: [],
   mouseThreshold: -40
+});
+
+// echorche
+new Ipic({
+  name: 'echorche',
+  frames: generateFrames('echorche00.jpg', 3, 'assets/pics/echorche'),
+  fullview: 'assets/pics/echorche/echorche.jpg',
+  parent: main,
+  days: [],
+  width: '250px',
+  fullviewWidth: '500px',
+  mouseThreshold: 40
 });
