@@ -41,6 +41,7 @@ export default class Ipic {
       // add frame img
       if (this.frames) {
         this.img = this.addImg(this.frames[0], this.container, config.width);
+        this.loadFrames();
         // set inline if in config
         if (config.inline) {
           this.img.style.display = 'inline';
@@ -101,6 +102,16 @@ export default class Ipic {
 
   prevFrame() {
     this.setFrame(this.currentFrame-1);
+  }
+
+  loadFrames() {
+    this.frames.forEach(frame => Ipic.phantomLoad(frame));
+  }
+
+  static phantomLoad(src) {
+    let img = new Image();
+    img.src = src;
+    img.onload = () => console.log(img);
   }
 
   addImg(src, parent, maxWidth) {
