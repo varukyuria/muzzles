@@ -79,3 +79,22 @@ new Ipic({
   fullviewWidth: '500px',
   mouseThreshold: 40
 });
+
+// female arms
+new Ipic({
+  name: 'female arms',
+  frames: generateFrames('arms00.jpg', 36, 'assets/pics/female/arms/frames'),
+  parent: main,
+  days: [],
+  mouseThreshold: 20
+});
+
+// female arms full view
+new Ipic({
+  name: 'female arms full view',
+  frames: generateFrames('armsfull00.jpg', 4, 'assets/pics/female/arms/full'),
+  parent: main,
+  width: '600px',
+  days: [],
+  mouseThreshold: 40
+});
