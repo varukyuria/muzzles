@@ -98,3 +98,23 @@ new Ipic({
   days: [],
   mouseThreshold: 40
 });
+
+// upper limb rotation 1
+new Ipic({
+  name: 'upper limb rotation 1',
+  frames: generateFrames('upperlimb_rotation1_0000.jpg', 12, 'assets/pics/upperlimb/rotation1'),
+  parent: main,
+  width: '600px',
+  days: [],
+  mouseThreshold: 30
+});
+
+// upper limb rotation 2
+new Ipic({
+  name: 'upper limb rotation 2',
+  frames: generateFrames('upperlimb_rotation2_0000.jpg', 12, 'assets/pics/upperlimb/rotation2'),
+  parent: main,
+  width: '600px',
+  days: [],
+  mouseThreshold: 30
+});
